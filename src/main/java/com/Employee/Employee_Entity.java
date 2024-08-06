@@ -1,22 +1,29 @@
 package com.Employee;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="Emp_details")
 public class Employee_Entity {
 
 	
 	@Id
-	private int emp_id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
 	private String name;
 	private String phone;
 	private String email;
-	public int getEmp_id() {
-		return emp_id;
+	
+	
+	public long getEmp_id() {
+		return id;
 	}
-	public void setEmp_id(int emp_id) {
-		this.emp_id = emp_id;
+	public void setEmp_id(long id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
