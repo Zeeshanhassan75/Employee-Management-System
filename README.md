@@ -14,7 +14,7 @@ Maven
 MySQL or any other relational database
 Getting Started
 Clone the repository
-git clone https://github.com/your-username/employee-management-system.git
+git clone https://github.com/Zeeshanhassan75/employee-management-system.git
 cd employee-management-system
 Setup Database
 Create a database named employee_db.
